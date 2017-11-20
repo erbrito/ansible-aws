@@ -1,0 +1,5 @@
+---
+# vars file for local-role
+# vars defined here has  the highest precedence. It has precedence for role-defaults or at playbook
+var_1: Default Content for var 1
+#var_2: Content for var 2 is clear text here

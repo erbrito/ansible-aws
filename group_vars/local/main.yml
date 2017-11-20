@@ -1,0 +1,4 @@
+---
+# vars file for host local group
+ec2_access_key: {vault_ec2_access_key}
+ec2_secret_key: {vault_ec2_secret_key}

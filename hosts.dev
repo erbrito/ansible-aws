@@ -1,0 +1,11 @@
+[local]
+127.0.0.1
+
+[local:vars]
+ansible_connection=local
+#This is 3rd level precedence, after group_vars variable definition.
+#var_1=this value of var 1 defined at the host level
+
+
+[all:children]
+local

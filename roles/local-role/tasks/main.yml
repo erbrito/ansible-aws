@@ -1,0 +1,30 @@
+---
+# tasks file for local-role
+
+- debug:
+    msg: "message forged on the role -> var_1: {{var_1}}"
+
+- debug:
+    msg: "message forged on the role -> var_2: {{var_2}}"
+
+- name: show a message task
+  debug:
+    msg: "a named task."
+
+- name: Provision a set of instances
+  ec2:
+    key_name: "{{ec2_key_name}}"
+    group: "{{ec2_group}}"
+    #t2.micro
+    instance_type: "{{ec2_instance_type}}"
+    image: "{{ ami_id }}"
+    wait: true
+    region: "{{ec2_region}}"
+    exact_count: 1
+    count_tag:
+      Name: Demo
+    instance_tags:
+      Name: Demo
+  register: ec2
+
+#- name: show a message

@@ -1,0 +1,2 @@
+vault_ec2_access_key: keytobeencripted
+vault_ec2_secret_key: secrettobeencripted

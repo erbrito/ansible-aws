@@ -1,0 +1,6 @@
+---
+# vars file for host all group
+# This is a second precedence, just after role-vars variable definition.
+
+var_1: Content for variable # 1
+var_2: The content is encrypted but we can see it {{vault_var_2}}

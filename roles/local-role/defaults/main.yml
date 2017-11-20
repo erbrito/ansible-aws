@@ -1,0 +1,5 @@
+---
+# defaults file for local-role
+
+# this is lowest precedence 4rd level, just after host inventory variable definition.
+#var_1: Default content for var 1 defined at the role level
